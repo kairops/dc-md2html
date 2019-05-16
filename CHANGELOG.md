@@ -1,3 +1,13 @@
+<a name="1.1.0"></a>
+# 1.1.0 (2019-05-16)
+
+
+### Update
+
+* Add debug option ([a7d04473c0fedb12095cf8c762605fdd47504496](https://github.com/kairops/dc-md2html/commit/a7d04473c0fedb12095cf8c762605fdd47504496))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2019-05-14)
 
@@ -5,6 +15,10 @@
 ### Breaking
 
 * Stdin, parameters and docs ([58ffd8bf4f3842ada35160b1057f5c7baf7aff83](https://github.com/kairops/dc-md2html/commit/58ffd8bf4f3842ada35160b1057f5c7baf7aff83))
+
+### Build
+
+* Update CHANGELOG.md to v1.0.0 with Red Panda JPL ([59237d61ce858b965a0b9c4cdb96d88a577879bd](https://github.com/kairops/dc-md2html/commit/59237d61ce858b965a0b9c4cdb96d88a577879bd))
 
 
 
