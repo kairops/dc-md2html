@@ -39,7 +39,8 @@ pipeline {
             agent { label 'docker' }
             when { branch 'release/new' }
             steps {
-                jplDockerPush (cfg, "kairops/dc-md2html", cfg.releaseTag, ".", "https://registry.hub.docker.com", "cikairos-docker-credentials")
+                script { cfg.releaseTag = sh (script: "kd get-next-release-number .", returnStdout: true).trim() }
+                jplDockerPush (cfg, "kairops/dc-md2html", cfg.releaseTag.substring(1), ".", "https://registry.hub.docker.com", "cikairos-docker-credentials")
                 jplDockerPush (cfg, "kairops/dc-md2html", "latest", ".", "https://registry.hub.docker.com", "cikairos-docker-credentials")
                 jplMakeRelease(cfg, true)
             }
