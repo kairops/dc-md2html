@@ -7,7 +7,7 @@ function echo_err () {
 }
 function echo_debug () {
     if [ "$KD_DEBUG" == "1" ]; then
-        echo >&2 ">>>> DEBUG >>>>> $(date "+%Y-%m-%d %H:%M:%S") $KD_NAME: $@"
+        echo >&2 ">>>> DEBUG >>>>> $(date "+%Y-%m-%d %H:%M:%S") $KD_NAME: " "$@"
     fi
 }
 
@@ -30,8 +30,8 @@ fi
 
 # Generate HTML from Markdown file if we have it as parameter
 if [ "$1" != "-" ]; then
-    if [ -f $1 ]; then
-        $markdownCMD $1
+    if [ -f "$1" ]; then
+        "$markdownCMD" "$1"
         exit 0
     else
         echo_err ">>>>>> md2html: File $1 does not exist. Abort"
