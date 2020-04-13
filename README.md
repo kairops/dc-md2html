@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please visit https://github.com/tpbtools/dc-md2html
+
 # Docker Command: Markdown to HTML file conversion
 
 Convert files from Markdown format to HTML format
