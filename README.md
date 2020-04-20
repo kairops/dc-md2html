@@ -1,6 +1,6 @@
 # DEPRECATED
 
-Please visit https://github.com/tpbtools/dc-md2html
+Please visit https://github.com/ayudadigital/dc-md2html
 
 # Docker Command: Markdown to HTML file conversion
 
